@@ -4,7 +4,8 @@
 
 def displayPathtoPrincess(n,grid):
 #print all the moves here
-    mid_square = n-1/2
+    mid_square = (n-1)/2
+    mid_square = int(mid_square)
     if grid[0][0]=="p":
         first_move = "UP"
         second_move = "LEFT"
@@ -21,7 +22,7 @@ def displayPathtoPrincess(n,grid):
         first_move="DOWN"
         second_move="RIGHT"
         
-    for _ in range(mid_square+1):
+    for _ in range(mid_square):
         print(first_move)
         print(second_move)
       
